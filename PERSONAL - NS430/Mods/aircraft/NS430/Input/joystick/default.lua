@@ -87,6 +87,7 @@ local keyCommands = {
 {pressed = device_commands.Button_29, cockpit_device_id = device_id, value_pressed = 0.5, name = _('Right small knob Increase'), category = _('NS Device')},
 {pressed = device_commands.Button_29, cockpit_device_id = device_id, value_pressed = -0.5, name = _('Right small knob Decrease'), category = _('NS Device')},
 
+--- EDIT: encoders fix ---
 -- iCommand_left_big_axis down
 {down = device_commands.Button_8, cockpit_device_id = device_id, value_down = 0.5, name = _('Left big knob Increase (down)'), category = _('NS Device')},
 {down = device_commands.Button_8, cockpit_device_id = device_id, value_down = -0.5, name = _('Left big knob Decrease (down)'), category = _('NS Device')},
@@ -102,6 +103,7 @@ local keyCommands = {
 -- iCommand_right_small_axis down
 {down = device_commands.Button_29, cockpit_device_id = device_id, value_down = 0.5, name = _('Right small knob Increase (down)'), category = _('NS Device')},
 {down = device_commands.Button_29, cockpit_device_id = device_id, value_down = -0.5, name = _('Right small knob Decrease (down)'), category = _('NS Device')},
+--- EDIT: encoders fix ---
 
 }
 ---------------------joystick axes-----------------------------------
