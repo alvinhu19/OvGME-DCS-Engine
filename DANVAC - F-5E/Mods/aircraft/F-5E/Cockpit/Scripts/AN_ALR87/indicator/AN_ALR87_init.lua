@@ -1,6 +1,9 @@
 dofile(LockOn_Options.common_script_path.."devices_defs.lua")
+dofile(LockOn_Options.common_script_path.."ViewportHandling.lua")
 
 indicator_type = indicator_types.COMMON
+purposes      = {render_purpose.GENERAL}
+try_find_assigned_viewport("F5E_RWR")
 ----------------------
 rwr_symbols_bound = 0.027   -- coeff to limit indication on RWR when symbol can't be place on RWR entirely
 -------PAGE IDs-------

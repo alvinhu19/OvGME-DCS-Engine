@@ -20,5 +20,5 @@ pages =
 }
 
 update_screenspace_diplacement(SelfWidth/SelfHeight,false)
-try_find_assigned_viewport("RIGHT_MFCD")
+try_find_assigned_viewport("F5E_RADAR")
 
