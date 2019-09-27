@@ -97,9 +97,15 @@ join(res.keyCommands,{
 
 {down = 3050, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 1, name = _('Gear lock ON'),	category = _('Systems')},
 {down = 3050, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 0, name = _('Gear lock OFF'),	category = _('Systems')},
+{down = 3050, up = 3050, cockpit_device_id = devices.GEAR_SYSTEM, value_down = 1, value_up = 0, name = _('Gear lock (Warthog)'), category = _('Systems')},
+
+{down = 3051, cockpit_device_id  = devices.GEAR_SYSTEM, value_down = 1, name = _('Gear direction UP'),   category = _('Systems')},
+{down = 3051, cockpit_device_id  = devices.GEAR_SYSTEM, value_down = 0, name = _('Gear direction DOWN'), category = _('Systems')},
+{down = 3051, up = 3051, cockpit_device_id = devices.GEAR_SYSTEM, value_down = 1, value_up = 0, name = _('Gear direction (Warthog)'), category = _('Systems')},
 
 {down = 3055, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 1, name = _('Gear brake spring ON'),	category = _('Systems')},
 {down = 3055, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 0, name = _('Gear brake spring OFF'),	category = _('Systems')},
+{down = 3055, up = 3055, cockpit_device_id = devices.GEAR_SYSTEM, value_down = 1, value_up = 0, name = _('Gear brake spring (Warthog)'), category = _('Systems')},
 
 {down = 3006, up = 3006, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down =  1, value_up = 0.0, name = _('Motor cooling flaps Increase'), category = _('Engine Control')}, 
 {down = 3006, up = 3006, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = -1, value_up = 0.0, name = _('Motor cooling flaps Decrease'), category = _('Engine Control')}, 
