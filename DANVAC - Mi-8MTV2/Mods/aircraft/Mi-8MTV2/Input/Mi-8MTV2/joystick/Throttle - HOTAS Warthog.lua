@@ -305,11 +305,11 @@ keyCommands = {
 {down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Right Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 {down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Right Headlight - Right'),	category = {_('Ins Collective Stick'), _('External Lights')}},
 
-{	down = device_commands.Button_7, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
-{combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_2, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN'),			category = {_('Ins Collective Stick'), _('External Cargo')}},
+{combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_7, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
+{	down = device_commands.Button_2, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN'),			category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_2, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 0,				name = _('External Cargo Tactical Unhook Button Cover - CLOSE'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
-{	down = device_commands.Button_9, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
-{combos = {{key = 'JOY_BTN8'}},	down = device_commands.Button_4, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
+{combos = {{key = 'JOY_BTN8'}},	down = device_commands.Button_9, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
+{	down = device_commands.Button_4, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_4, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 0,				name = _('External Cargo Emergency Unhook Button Cover - CLOSE'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
 {combos = {{key = 'JOY_BTN9'}},	down = device_commands.Button_1, up = device_commands.Button_1,	cockpit_device_id = devices.EXT_CARGO_EQUIPMENT,	value_down = 1, value_up = 0,	name = _('External Cargo Tactical Unhook Button'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
 {combos = {{key = 'JOY_BTN7'}},	down = device_commands.Button_3, up = device_commands.Button_3,	cockpit_device_id = devices.EXT_CARGO_EQUIPMENT,	value_down = 1, value_up = 0,	name = _('External Cargo Emergency Unhook Button'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
@@ -1235,7 +1235,7 @@ keyCommands = {
 {	down = device_commands.Button_27,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1,		name = _('Weapon Safe/Armed Switch - ON'),		category = {_('Armament System')}},
 {	down = device_commands.Button_27,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 0,		name = _('Weapon Safe/Armed Switch - OFF'),		category = {_('Armament System')}},
 --
-{combos = {{key = 'JOY_BTN24'}},	down = device_commands.Button_11, up = device_commands.Button_11,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1.0, value_up = 0.0,	name = _('Release Bomb'),	category = {_('Armament System')}},
+{combos = {{key = 'JOY_BTN15'}},	down = device_commands.Button_11, up = device_commands.Button_11,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1.0, value_up = 0.0,	name = _('Release Bomb'),	category = {_('Armament System')}},
 
 --Gunners AI Panel
 {	down = device_commands.Button_91, cockpit_device_id = devices.WEAPON_SYS, value_down = 1.0, name = _('AI Panel Show/Hide'), category = _('Gunners AI Panel')},
@@ -1247,8 +1247,8 @@ keyCommands = {
 ------------------------------------------------
 -- THRUSTMASTER HOTAS WARTHOG ------------------
 ------------------------------------------------
-{combos = {{key = 'JOY_BTN5'}},  down = device_commands.Button_3,	up = device_commands.Button_3,	cockpit_device_id = devices.SPU_7,				value_down = 0.2,	name = _('SPU-7 Radio Source Select Rotary - R-828 (Warthog)'),			category = {_('SPU-7 Intercom Panels')}},
-{combos = {{key = 'JOY_BTN4'}},  down = device_commands.Button_3,	up = device_commands.Button_3,	cockpit_device_id = devices.SPU_7,				value_down = 0.0,	name = _('SPU-7 Radio Source Select Rotary - R-863 (Warthog)'), 		category = {_('SPU-7 Intercom Panels')}},
+{combos = {{key = 'JOY_BTN4'}},  down = device_commands.Button_3,	up = device_commands.Button_3,	cockpit_device_id = devices.SPU_7,				value_down = 0.2,	name = _('SPU-7 Radio Source Select Rotary - R-828 (Warthog)'),			category = {_('SPU-7 Intercom Panels')}},
+{combos = {{key = 'JOY_BTN5'}},  down = device_commands.Button_3,	up = device_commands.Button_3,	cockpit_device_id = devices.SPU_7,				value_down = 0.0,	name = _('SPU-7 Radio Source Select Rotary - R-863 (Warthog)'), 		category = {_('SPU-7 Intercom Panels')}},
 {combos = {{key = 'JOY_BTN6'}},  down = device_commands.Button_3,	up = device_commands.Button_3,	cockpit_device_id = devices.SPU_7,				value_down = 0.1,	name = _('SPU-7 Radio Source Select Rotary - Jadro-1A (Warthog)'),		category = {_('SPU-7 Intercom Panels')}},
 {combos = {{key = 'JOY_BTN24'}}, down = device_commands.Button_17,	up = device_commands.Button_17,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = 1,		value_up = 0,	name = _('Taxi Light Power Switch (Warthog)'),			category = {_('Left Dashboard'), _('External Lights')}},
 {combos = {{key = 'JOY_BTN25'}}, down = device_commands.Button_15,	up = device_commands.Button_15,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = 1,		value_up = 0,	name = _('Strobe Light Switch (Warthog)'),				category = {_('Right Side Panel'), _('External Lights')}},
