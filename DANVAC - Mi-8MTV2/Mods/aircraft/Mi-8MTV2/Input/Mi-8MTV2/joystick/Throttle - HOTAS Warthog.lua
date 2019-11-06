@@ -16,7 +16,8 @@ forceFeedback = {
 	trimmer		= 1,
 },
 keyCommands = {
-
+{	down = iCommandAWACSBanditBearing,	name = _('Request AWACS Bogey Dope'),	category = _('Communications')},
+{	down = iCommandflushTaxiData,		name = ('Flush taxi data'),				category = ('View')},
 -- Debug
 {down = iCommandMissionRestart, name = _('Restart Mission'), category = _('Debug')},
 
@@ -233,7 +234,7 @@ keyCommands = {
 ------------------------------------------------
 -- View ----------------------------------------
 ------------------------------------------------
-{combos = {{key = 'JOY_BTN1'}}, down = device_commands.Button_1, cockpit_device_id = devices.EXTERNAL_CARGO_VIEW, value_down = 1,	name = _('Cargo View'),	category = _('View')},
+{combos = {{key = 'JOY_BTN1'}},	down = device_commands.Button_1, cockpit_device_id = devices.EXTERNAL_CARGO_VIEW, value_down = 1,	name = _('Cargo View'),	category = _('View')},
 
 ------------------------------------------------
 -- View Cockpit --------------------------------
@@ -241,9 +242,9 @@ keyCommands = {
 {	down = device_commands.Button_1, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Pilot Seat'),					category = _('View Cockpit')},
 {	down = device_commands.Button_2, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Copilot Seat'),				category = _('View Cockpit')},
 {	down = device_commands.Button_3, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Technician Seat'),			category = _('View Cockpit')},
---{	down = device_commands.Button_4, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Gunner Seat'),				category = _('View Cockpit')},
+{	down = device_commands.Button_4, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Gunner Seat'),				category = _('View Cockpit')},
 {	down = iCommandViewTransposeModeOn, up = iCommandViewTransposeModeOff,							name = _('Camera transpose mode on/off'),	category = _('View Cockpit')},
-
+{down = device_commands.Button_6, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Cargo Hatch View'),		category = _('View Cockpit')},
 ------------------------------------------------
 -- External Cargo ------------------------------
 ------------------------------------------------
@@ -300,10 +301,10 @@ keyCommands = {
 {combos = {{key = "JOY_BTN_POV1_L"}, },	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Left Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 {combos = {{key = "JOY_BTN_POV1_R"}, },	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Left Headlight - Right'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 
-{down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 1, value_up = 0,	name = _('Right Headlight - Down'),		category = {_('Ins Collective Stick'), _('External Lights')}},
-{down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 2, value_up = 0,	name = _('Right Headlight - Up'),		category = {_('Ins Collective Stick'), _('External Lights')}},
-{down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Right Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
-{down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Right Headlight - Right'),	category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 1, value_up = 0,	name = _('Right Headlight - Down'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 2, value_up = 0,	name = _('Right Headlight - Up'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Right Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Right Headlight - Right'),	category = {_('Ins Collective Stick'), _('External Lights')}},
 
 {combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_7, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_2, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN'),			category = {_('Ins Collective Stick'), _('External Cargo')}},
@@ -1243,6 +1244,7 @@ keyCommands = {
 {	down = device_commands.Button_92, cockpit_device_id = devices.WEAPON_SYS, value_down = 0.1, name = _('AI Gunner Burst Switch'), category = _('Gunners AI Panel')},
 {	down = device_commands.Button_93, cockpit_device_id = devices.WEAPON_SYS, value_down = 0.0, name = _('AI Back Gunner ROE Iterate'), category = _('Gunners AI Panel')},
 {	down = device_commands.Button_93, cockpit_device_id = devices.WEAPON_SYS, value_down = 0.1, name = _('AI Back Gunner Burst Switch'), category = _('Gunners AI Panel')},
+{	down = device_commands.Button_96,	cockpit_device_id = devices.WEAPON_SYS,		value_down = 1.0,	name = _('Show Gunners Panel'),	category = {_('Hints'), _('Armament System')}},
 
 ------------------------------------------------
 -- THRUSTMASTER HOTAS WARTHOG ------------------
@@ -1258,14 +1260,13 @@ keyCommands = {
 {combos = {{key = 'JOY_BTN13'}}, down = device_commands.Button_12,	up = device_commands.Button_12,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = 1,		value_up = 0,	name = _('Nav. Lights Switch - BRIGHT (Warthog)'),		category = {_('Right Side Panel'), _('External Lights')}},
 {combos = {{key = 'JOY_BTN23'}}, down = device_commands.Button_13,	up = device_commands.Button_13,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = -1,	value_up = 0,	name = _('Formation Lights Switch - DIM (Warthog)'),	category = {_('Right Side Panel'), _('External Lights')}},
 {combos = {{key = 'JOY_BTN22'}}, down = device_commands.Button_13,	up = device_commands.Button_13,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = 1,		value_up = 0,	name = _('Formation Lights Switch - BRIGHT (Warthog)'),	category = {_('Right Side Panel'), _('External Lights')}},
-{down = device_commands.Button_14,	up = device_commands.Button_14,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = 1,		value_up = 0,	name = _('Tip Lights Switch - ON (Warthog)'),			category = {_('Right Side Panel'), _('External Lights')}},
+{	down = device_commands.Button_14,	up = device_commands.Button_14,	cockpit_device_id = devices.NAVLIGHT_SYSTEM,	value_down = 1,		value_up = 0,	name = _('Tip Lights Switch - ON (Warthog)'),			category = {_('Right Side Panel'), _('External Lights')}},
 {combos = {{key = 'JOY_BTN20'}}, down = device_commands.Button_27,	up = device_commands.Button_27,	cockpit_device_id = devices.WEAPON_SYS,			value_down = 1,		value_up = 0,	name = _('Weapon Safe/Armed Switch - ON (Warthog)'),	category = {_('Armament System')}},
 {combos = {{key = 'JOY_BTN18'}}, down = device_commands.Button_1,	up = device_commands.Button_1,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 0,		value_up = 1,	name = _('Left Shutoff Valve Switch - OFF (Warthog)'),	category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {combos = {{key = 'JOY_BTN19'}}, down = device_commands.Button_2,	up = device_commands.Button_2,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 0,		value_up = 1,	name = _('Right Shutoff Valve Switch - OFF (Warthog)'),	category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {combos = {{key = 'JOY_BTN16'}}, down = device_commands.Button_28,  up = device_commands.Button_28, cockpit_device_id = devices.ENGINE_INTERFACE,   value_down = 1,	    value_up = 0,   name = _('Left Engine Dust Protection Switch - ON (Warthog)'),		category = {_('Right Side Panel'), _('Engines')}},
 {combos = {{key = 'JOY_BTN17'}}, down = device_commands.Button_29,  up = device_commands.Button_29, cockpit_device_id = devices.ENGINE_INTERFACE,   value_down = 1,	    value_up = 0,   name = _('Right Engine Dust Protection Switch - ON (Warthog)'),		category = {_('Right Side Panel'), _('Engines')}},
 },
-
 axisCommands = {
 
 {action = iCommandViewHorizontalAbs			, name = _('Absolute Camera Horizontal View')},
