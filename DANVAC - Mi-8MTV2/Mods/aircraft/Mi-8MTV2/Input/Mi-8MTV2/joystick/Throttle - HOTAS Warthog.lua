@@ -239,12 +239,12 @@ keyCommands = {
 ------------------------------------------------
 -- View Cockpit --------------------------------
 ------------------------------------------------
-{	down = device_commands.Button_1, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Pilot Seat'),					category = _('View Cockpit')},
-{	down = device_commands.Button_2, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Copilot Seat'),				category = _('View Cockpit')},
-{	down = device_commands.Button_3, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Technician Seat'),			category = _('View Cockpit')},
+{combos = {{key = "JOY_BTN_POV1_L"}},	down = device_commands.Button_1, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Pilot Seat'),					category = _('View Cockpit')},
+{combos = {{key = "JOY_BTN_POV1_R"}},	down = device_commands.Button_2, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Copilot Seat'),				category = _('View Cockpit')},
+{combos = {{key = "JOY_BTN_POV1_U"}},	down = device_commands.Button_3, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Technician Seat'),			category = _('View Cockpit')},
 {	down = device_commands.Button_4, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Set Gunner Seat'),				category = _('View Cockpit')},
 {	down = iCommandViewTransposeModeOn, up = iCommandViewTransposeModeOff,							name = _('Camera transpose mode on/off'),	category = _('View Cockpit')},
-{down = device_commands.Button_6, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Cargo Hatch View'),		category = _('View Cockpit')},
+{combos = {{key = "JOY_BTN_POV1_D"}},	down = device_commands.Button_6, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Cargo Hatch View'),		category = _('View Cockpit')},
 ------------------------------------------------
 -- External Cargo ------------------------------
 ------------------------------------------------
@@ -257,8 +257,8 @@ keyCommands = {
 -- Night Vision Goggles ------------------------
 ------------------------------------------------
 {combos = {{key = 'JOY_BTN21'}},	down = iCommandViewNightVisionGogglesOn,		name = _('Night Vision Goggles'),			category = {_('Sensors')}},
-{	pressed = iCommandPlane_Helmet_Brightess_Up,	name = _('Night Vision Goggles Gain Up'),	category = {_('Sensors')}},
-{	pressed = iCommandPlane_Helmet_Brightess_Down,	name = _('Night Vision Goggles Gain Down'),	category = {_('Sensors')}},
+{combos = {{key = 'JOY_BTN11'}},	pressed = iCommandPlane_Helmet_Brightess_Up,	name = _('Night Vision Goggles Gain Up'),	category = {_('Sensors')}},
+{combos = {{key = 'JOY_BTN12'}},	pressed = iCommandPlane_Helmet_Brightess_Down,	name = _('Night Vision Goggles Gain Down'),	category = {_('Sensors')}},
 
 ------------------------------------------------
 -- Ins Cyclic Stick ----------------------------
@@ -296,24 +296,24 @@ keyCommands = {
 {	down = iCommandThrottleIncrease,	up = iCommandThrottleStop,																		name = _('Correction Lever - Increase'),						category = {_('Ins Collective Stick'), _('Engines')}},
 {	down = iCommandThrottleDecrease,	up = iCommandThrottleStop,																		name = _('Correction Lever - Decrease'),						category = {_('Ins Collective Stick'), _('Engines')}},
 
-{combos = {{key = "JOY_BTN_POV1_D"}, },	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 1, value_up = 0,	name = _('Left Headlight - Down'),		category = {_('Ins Collective Stick'), _('External Lights')}},
-{combos = {{key = "JOY_BTN_POV1_U"}, },	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 2, value_up = 0,	name = _('Left Headlight - Up'),		category = {_('Ins Collective Stick'), _('External Lights')}},
-{combos = {{key = "JOY_BTN_POV1_L"}, },	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Left Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
-{combos = {{key = "JOY_BTN_POV1_R"}, },	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Left Headlight - Right'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 1, value_up = 0,	name = _('Left Headlight - Down'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 2, value_up = 0,	name = _('Left Headlight - Up'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Left Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
+{	down = device_commands.Button_20, up = device_commands.Button_20,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Left Headlight - Right'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 
 {	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 1, value_up = 0,	name = _('Right Headlight - Down'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 {	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 2, value_up = 0,	name = _('Right Headlight - Up'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 {	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 3, value_up = 0,	name = _('Right Headlight - Left'),		category = {_('Ins Collective Stick'), _('External Lights')}},
 {	down = device_commands.Button_21, up = device_commands.Button_21,	cockpit_device_id = devices.NAVLIGHT_SYSTEM, value_down = 4, value_up = 0,	name = _('Right Headlight - Right'),	category = {_('Ins Collective Stick'), _('External Lights')}},
 
-{combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_7, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
+{combos = {{key = 'JOY_BTN7'}},	down = device_commands.Button_7, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_2, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Tactical Unhook Button Cover - OPEN'),			category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_2, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 0,				name = _('External Cargo Tactical Unhook Button Cover - CLOSE'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
-{combos = {{key = 'JOY_BTN8'}},	down = device_commands.Button_9, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
+{	down = device_commands.Button_9, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN/CLOSE'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_4, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 1,				name = _('External Cargo Emergency Unhook Button Cover - OPEN'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
 {	down = device_commands.Button_4, cockpit_device_id = devices.EXT_CARGO_EQUIPMENT, value_down = 0,				name = _('External Cargo Emergency Unhook Button Cover - CLOSE'),		category = {_('Ins Collective Stick'), _('External Cargo')}},
-{combos = {{key = 'JOY_BTN9'}},	down = device_commands.Button_1, up = device_commands.Button_1,	cockpit_device_id = devices.EXT_CARGO_EQUIPMENT,	value_down = 1, value_up = 0,	name = _('External Cargo Tactical Unhook Button'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
-{combos = {{key = 'JOY_BTN7'}},	down = device_commands.Button_3, up = device_commands.Button_3,	cockpit_device_id = devices.EXT_CARGO_EQUIPMENT,	value_down = 1, value_up = 0,	name = _('External Cargo Emergency Unhook Button'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
+{combos = {{key = 'JOY_BTN8'}},	down = device_commands.Button_1, up = device_commands.Button_1,	cockpit_device_id = devices.EXT_CARGO_EQUIPMENT,	value_down = 1, value_up = 0,	name = _('External Cargo Tactical Unhook Button'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
+{	down = device_commands.Button_3, up = device_commands.Button_3,	cockpit_device_id = devices.EXT_CARGO_EQUIPMENT,	value_down = 1, value_up = 0,	name = _('External Cargo Emergency Unhook Button'),	category = {_('Ins Collective Stick'), _('External Cargo')}},
 
 ------------------------------------------------
 -- Ins Rudder ----------------------------------
@@ -711,10 +711,10 @@ keyCommands = {
 {	down = device_commands.Button_3, up = device_commands.Button_3,	cockpit_device_id = devices.HYDRO_SYS_INTERFACE,	value_down = 1,	value_up = 0,	name = _('Auxiliary Hydraulic OFF Button'),					category = {_('Center Overhead Panel'), _('Hydraulic System Panel')}},
 -- Fuel System Panel
 {	down = device_commands.Button_18,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Left Shutoff Valve Switch Cover - OPEN/CLOSE'),	category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
-{combos = {{key = 'JOY_BTN12'}},	down = device_commands.Button_9,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Left Shutoff Valve Switch Cover - OPEN'),			category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
+{combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_9,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Left Shutoff Valve Switch Cover - OPEN'),			category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_9,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 0,		name = _('Left Shutoff Valve Switch Cover - CLOSE'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_19,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Right Shutoff Valve Switch Cover - OPEN/CLOSE'),	category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
-{combos = {{key = 'JOY_BTN11'}},	down = device_commands.Button_10,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Right Shutoff Valve Switch Cover - OPEN'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
+{combos = {{key = 'JOY_BTN9'}},	down = device_commands.Button_10,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Right Shutoff Valve Switch Cover - OPEN'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_10,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 0,		name = _('Right Shutoff Valve Switch Cover - CLOSE'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_20,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Crossfeed Switch Cover - OPEN/CLOSE'),			category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_11,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Crossfeed Switch Cover - OPEN'),					category = {_('Center Overhead Panel'), _('Fuel System Panel')}},

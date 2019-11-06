@@ -58,14 +58,14 @@ keyCommands = {
 {down = ICommandSwitchToCommonDialog, name = _('Switch to main menu'), category = _('Communications')},
 
 -- View                                                    
-{combos = {{key = 'JOY_BTN_POV1_L'}}, pressed = iCommandViewLeftSlow, up = iCommandViewStopSlow, name = _('View Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_R'}}, pressed = iCommandViewRightSlow, up = iCommandViewStopSlow, name = _('View Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_U'}}, pressed = iCommandViewUpSlow, up = iCommandViewStopSlow, name = _('View Up slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_D'}}, pressed = iCommandViewDownSlow, up = iCommandViewStopSlow, name = _('View Down slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_UR'}}, pressed = iCommandViewUpRightSlow, up = iCommandViewStopSlow, name = _('View Up Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_DR'}}, pressed = iCommandViewDownRightSlow, up = iCommandViewStopSlow, name = _('View Down Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_DL'}}, pressed = iCommandViewDownLeftSlow, up = iCommandViewStopSlow, name = _('View Down Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_UL'}}, pressed = iCommandViewUpLeftSlow, up = iCommandViewStopSlow, name = _('View Up Left slow'), category = _('View')},
+{pressed = iCommandViewLeftSlow, up = iCommandViewStopSlow, name = _('View Left slow'), category = _('View')},
+{pressed = iCommandViewRightSlow, up = iCommandViewStopSlow, name = _('View Right slow'), category = _('View')},
+{pressed = iCommandViewUpSlow, up = iCommandViewStopSlow, name = _('View Up slow'), category = _('View')},
+{pressed = iCommandViewDownSlow, up = iCommandViewStopSlow, name = _('View Down slow'), category = _('View')},
+{pressed = iCommandViewUpRightSlow, up = iCommandViewStopSlow, name = _('View Up Right slow'), category = _('View')},
+{pressed = iCommandViewDownRightSlow, up = iCommandViewStopSlow, name = _('View Down Right slow'), category = _('View')},
+{pressed = iCommandViewDownLeftSlow, up = iCommandViewStopSlow, name = _('View Down Left slow'), category = _('View')},
+{pressed = iCommandViewUpLeftSlow, up = iCommandViewStopSlow, name = _('View Up Left slow'), category = _('View')},
 {                                      pressed = iCommandViewCenter, name = _('View Center'), category = _('View')},
 
 {pressed = iCommandViewForwardSlow, up = iCommandViewForwardSlowStop, name = _('Zoom in slow'), category = _('View')},
@@ -130,7 +130,7 @@ keyCommands = {
 {pressed = iCommandViewDownLeft, up = iCommandViewStop, name = _('View down left'), category = _('View Cockpit')},
 {pressed = iCommandViewUpLeft, up = iCommandViewStop, name = _('View up left'), category = _('View Cockpit')},
 
--- Cockpit Camera Motion (Ïåðåäâèæåíèå êàìåðû â êàáèíå)
+-- Cockpit Camera Motion (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 {pressed = iCommandViewPitCameraMoveUp, up = iCommandViewPitCameraMoveStop, name = _('Cockpit Camera Move Up'), category = _('View Cockpit')},
 {pressed = iCommandViewPitCameraMoveDown, up = iCommandViewPitCameraMoveStop, name = _('Cockpit Camera Move Down'), category = _('View Cockpit')},
 {pressed = iCommandViewPitCameraMoveLeft, up = iCommandViewPitCameraMoveStop, name = _('Cockpit Camera Move Left'), category = _('View Cockpit')},
@@ -999,19 +999,19 @@ keyCommands = {
 -- Center Console ------------------------------
 ------------------------------------------------
 -- Autopilot
-{	down = device_commands.Button_3, up = device_commands.Button_3, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Channel ON Button'),			category = {_('Center Console'), _('Autopilot')}},
-{	down = device_commands.Button_2, up = device_commands.Button_2, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Roll/Pitch Channel ON Button'),			category = {_('Center Console'), _('Autopilot')}},
-{	down = device_commands.Button_1, up = device_commands.Button_1, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Channel ON Button'),			category = {_('Center Console'), _('Autopilot')}},
-{	down = device_commands.Button_5, up = device_commands.Button_5, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Channel OFF Button'),			category = {_('Center Console'), _('Autopilot')}},
-{	down = device_commands.Button_4, up = device_commands.Button_4, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Channel OFF Button'),			category = {_('Center Console'), _('Autopilot')}},
-{	down = device_commands.Button_6, up = device_commands.Button_6, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Control Switch - Up'),			category = {_('Center Console'), _('Autopilot')}},
-{	down = device_commands.Button_7, up = device_commands.Button_7, value_down = -1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Control Switch - Down'),		category = {_('Center Console'), _('Autopilot')}},
-{	pressed = device_commands.Button_13, value_pressed = -0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Adjustment Knob - CCW/Left'),	category = {_('Center Console'), _('Autopilot')}},
-{	pressed = device_commands.Button_13, value_pressed = 0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Adjustment Knob - CW/Right'),	category = {_('Center Console'), _('Autopilot')}},
-{	pressed = device_commands.Button_14, value_pressed = -0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Roll Adjustment Knob - CCW/Left'),		category = {_('Center Console'), _('Autopilot')}},
-{	pressed = device_commands.Button_14, value_pressed = 0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Roll Adjustment Knob - CW/Right'),		category = {_('Center Console'), _('Autopilot')}},
-{	pressed = device_commands.Button_15, value_pressed = -0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Pitch Adjustment Knob - CCW/Left'),		category = {_('Center Console'), _('Autopilot')}},
-{	pressed = device_commands.Button_15, value_pressed = 0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Pitch Adjustment Knob - CW/Right'),		category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN14'}},	down = device_commands.Button_3, up = device_commands.Button_3, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Channel ON Button'),			category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN11'}},	down = device_commands.Button_2, up = device_commands.Button_2, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Roll/Pitch Channel ON Button'),			category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN12'}},	down = device_commands.Button_1, up = device_commands.Button_1, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Channel ON Button'),			category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_5, up = device_commands.Button_5, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Channel OFF Button'),			category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN8'}},	down = device_commands.Button_4, up = device_commands.Button_4, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Channel OFF Button'),			category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN15'}},	down = device_commands.Button_6, up = device_commands.Button_6, value_down = 1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Control Switch - Up'),			category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN17'}},	down = device_commands.Button_7, up = device_commands.Button_7, value_down = -1, value_up = 0,	cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Altitude Control Switch - Down'),		category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN18'}},	pressed = device_commands.Button_13, value_pressed = -0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Adjustment Knob - CCW/Left'),	category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN16'}},	pressed = device_commands.Button_13, value_pressed = 0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Heading Adjustment Knob - CW/Right'),	category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN_POV1_L'}},	pressed = device_commands.Button_14, value_pressed = -0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Roll Adjustment Knob - CCW/Left'),		category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN_POV1_R'}},	pressed = device_commands.Button_14, value_pressed = 0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Roll Adjustment Knob - CW/Right'),		category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN_POV1_D'}},	pressed = device_commands.Button_15, value_pressed = -0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Pitch Adjustment Knob - CCW/Left'),		category = {_('Center Console'), _('Autopilot')}},
+{combos = {{key = 'JOY_BTN_POV1_U'}},	pressed = device_commands.Button_15, value_pressed = 0.5,										cockpit_device_id = devices.AUTOPILOT,	name = _('Autopilot Pitch Adjustment Knob - CW/Right'),		category = {_('Center Console'), _('Autopilot')}},
 {	down = device_commands.Button_1, value_down = 1, cockpit_device_id = devices.AUTOPILOT_ADJUSTMENT,										name = _('Adjust Autopilot'),								category = {_('Autopilot')}},
 -- SPUU-52
 {	down = device_commands.Button_7,								cockpit_device_id = devices.SPUU_52,	value_down = 1,					name = _('SPUU-52 Test Engage Button - ON/OFF'),		category = {_('Center Console'), _('SPUU-52')}},
@@ -1208,7 +1208,7 @@ keyCommands = {
 {	down = device_commands.Button_76,									cockpit_device_id = devices.WEAPON_SYS,	value_down = 0,						name = _('Mine Arms Main Switch - OFF'),					category = {_('Overhead CB Panels'), _('Armament System')}},
 
 ------------------------------------------------
--- Navigator’s Weapons Control Panel -----------
+-- Navigatorï¿½s Weapons Control Panel -----------
 ------------------------------------------------
 {	down = device_commands.Button_14, up = device_commands.Button_14,	cockpit_device_id = devices.WEAPON_SYS, value_down = 1.0, value_up = 0.0,	name = _('Lamps Test Button'),						category = {_('Right Weapons Control Panel'), _('Armament System')}},
 {	down = device_commands.Button_67,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1.0,		name = _('Second Pilot Emergency Release Switch Cover - OPEN/CLOSE'),	category = {_('Right Weapons Control Panel'), _('Armament System')}},
@@ -1227,8 +1227,8 @@ keyCommands = {
 {	down = device_commands.Button_70,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1.0,		name = _('ESBR Heating Switch - ON/OFF'),								category = {_('Right Weapons Control Panel'), _('Armament System')}},
 {	down = device_commands.Button_12,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1,			name = _('ESBR Heating Switch - ON'),									category = {_('Right Weapons Control Panel'), _('Armament System')}},
 {	down = device_commands.Button_12,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 0,			name = _('ESBR Heating Switch - OFF'),									category = {_('Right Weapons Control Panel'), _('Armament System')}},
-{	down = device_commands.Button_71,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1.0,		name = _('Pylon Setup Selector Switch - CW'),							category = {_('Right Weapons Control Panel'), _('Armament System')}},
-{	down = device_commands.Button_71,	cockpit_device_id = devices.WEAPON_SYS,	value_down = -1.0,		name = _('Pylon Setup Selector Switch - CCW'),							category = {_('Right Weapons Control Panel'), _('Armament System')}},
+{combos = {{key = 'JOY_BTN7'}},	down = device_commands.Button_71,	cockpit_device_id = devices.WEAPON_SYS,	value_down = 1.0,		name = _('Pylon Setup Selector Switch - CW'),							category = {_('Right Weapons Control Panel'), _('Armament System')}},
+{combos = {{key = 'JOY_BTN9'}},	down = device_commands.Button_71,	cockpit_device_id = devices.WEAPON_SYS,	value_down = -1.0,		name = _('Pylon Setup Selector Switch - CCW'),							category = {_('Right Weapons Control Panel'), _('Armament System')}},
 
 ------------------------------------------------
 -- Armament System -----------------------------
