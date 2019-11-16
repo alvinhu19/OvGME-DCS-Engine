@@ -711,10 +711,10 @@ keyCommands = {
 {	down = device_commands.Button_3, up = device_commands.Button_3,	cockpit_device_id = devices.HYDRO_SYS_INTERFACE,	value_down = 1,	value_up = 0,	name = _('Auxiliary Hydraulic OFF Button'),					category = {_('Center Overhead Panel'), _('Hydraulic System Panel')}},
 -- Fuel System Panel
 {	down = device_commands.Button_18,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Left Shutoff Valve Switch Cover - OPEN/CLOSE'),	category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
-{combos = {{key = 'JOY_BTN10'}},	down = device_commands.Button_9,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Left Shutoff Valve Switch Cover - OPEN'),			category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
+{	down = device_commands.Button_9,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Left Shutoff Valve Switch Cover - OPEN'),			category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_9,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 0,		name = _('Left Shutoff Valve Switch Cover - CLOSE'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_19,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Right Shutoff Valve Switch Cover - OPEN/CLOSE'),	category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
-{combos = {{key = 'JOY_BTN9'}},	down = device_commands.Button_10,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Right Shutoff Valve Switch Cover - OPEN'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
+{	down = device_commands.Button_10,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Right Shutoff Valve Switch Cover - OPEN'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_10,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 0,		name = _('Right Shutoff Valve Switch Cover - CLOSE'),		category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_20,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Crossfeed Switch Cover - OPEN/CLOSE'),			category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
 {	down = device_commands.Button_11,	cockpit_device_id = devices.FUELSYS_INTERFACE,	value_down = 1,		name = _('Crossfeed Switch Cover - OPEN'),					category = {_('Center Overhead Panel'), _('Fuel System Panel')}},
