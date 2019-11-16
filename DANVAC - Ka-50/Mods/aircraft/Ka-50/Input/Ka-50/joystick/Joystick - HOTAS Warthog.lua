@@ -36,15 +36,15 @@ keyCommands = {
 {down = iCommandSoundOnOff,			name = _('Sound On/Off'),	 category = _('General')},
 
 -- View                                                    
-{combos = {{key = 'JOY_BTN_POV1_L'}}, pressed = iCommandViewLeftSlow, up = iCommandViewStopSlow, name = _('View Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_R'}}, pressed = iCommandViewRightSlow, up = iCommandViewStopSlow, name = _('View Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_U'}}, pressed = iCommandViewUpSlow, up = iCommandViewStopSlow, name = _('View Up slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_D'}}, pressed = iCommandViewDownSlow, up = iCommandViewStopSlow, name = _('View Down slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_UR'}}, pressed = iCommandViewUpRightSlow, up = iCommandViewStopSlow, name = _('View Up Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_DR'}}, pressed = iCommandViewDownRightSlow, up = iCommandViewStopSlow, name = _('View Down Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_DL'}}, pressed = iCommandViewDownLeftSlow, up = iCommandViewStopSlow, name = _('View Down Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_UL'}}, pressed = iCommandViewUpLeftSlow, up = iCommandViewStopSlow, name = _('View Up Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN5'}}, pressed = iCommandViewCenter, name = _('Center View'), category = _('View')},
+{pressed = iCommandViewLeftSlow, up = iCommandViewStopSlow, name = _('View Left slow'), category = _('View')},
+{pressed = iCommandViewRightSlow, up = iCommandViewStopSlow, name = _('View Right slow'), category = _('View')},
+{pressed = iCommandViewUpSlow, up = iCommandViewStopSlow, name = _('View Up slow'), category = _('View')},
+{pressed = iCommandViewDownSlow, up = iCommandViewStopSlow, name = _('View Down slow'), category = _('View')},
+{pressed = iCommandViewUpRightSlow, up = iCommandViewStopSlow, name = _('View Up Right slow'), category = _('View')},
+{pressed = iCommandViewDownRightSlow, up = iCommandViewStopSlow, name = _('View Down Right slow'), category = _('View')},
+{pressed = iCommandViewDownLeftSlow, up = iCommandViewStopSlow, name = _('View Down Left slow'), category = _('View')},
+{pressed = iCommandViewUpLeftSlow, up = iCommandViewStopSlow, name = _('View Up Left slow'), category = _('View')},
+{pressed = iCommandViewCenter, name = _('Center View'), category = _('View')},
          
 
 {pressed = iCommandViewForwardSlow, up = iCommandViewForwardSlowStop, name = _('Zoom in slow'), category = _('View')},
@@ -259,11 +259,11 @@ keyCommands = {
 
 
 -- Ins Cyclick Stick
-{pressed = iCommandPlaneDesignate_CageOn, up = iCommandPlaneDesignate_CageOff, name = _('Uncage SHKVAL, designate target'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN_POV1_U', reformers = {'RAlt'}}}, pressed = iCommandPlaneRadarUp, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew up'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN_POV1_D', reformers = {'RAlt'}}}, pressed = iCommandPlaneRadarDown, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew down'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN_POV1_L', reformers = {'RAlt'}}}, pressed = iCommandPlaneRadarLeft, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew left'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN_POV1_R', reformers = {'RAlt'}}}, pressed = iCommandPlaneRadarRight, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew right'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN4'}}, pressed = iCommandPlaneDesignate_CageOn, up = iCommandPlaneDesignate_CageOff, name = _('Uncage SHKVAL, designate target'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN_POV1_U'}}, pressed = iCommandPlaneRadarUp, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew up'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN_POV1_D'}}, pressed = iCommandPlaneRadarDown, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew down'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN_POV1_L'}}, pressed = iCommandPlaneRadarLeft, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew left'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN_POV1_R'}}, pressed = iCommandPlaneRadarRight, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew right'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneRadarCenter, name = _('KU-31 Shkval center'), category = _('Ins Cyclic Stick')},
 {combos = defaultDeviceAssignmentFor("fire"), down = iCommandPlaneFire, up = iCommandPlaneFireOff, name = _('Gun fire'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN2'}}, down = iCommandPlanePickleOn,    up = iCommandPlanePickleOff, name = _('Release weapons'), category = _('Ins Cyclic Stick')},
@@ -274,10 +274,10 @@ keyCommands = {
 {pressed = iCommandPlaneLeftStart  , up = iCommandPlaneLeftStop,   name = _('Cyclic bank left'), category = _('Ins Cyclic Stick')},
 {pressed = iCommandPlaneRightStart , up = iCommandPlaneRightStop,  name = _('Cyclic bank right'), category = _('Ins Cyclic Stick')},
 
-{combos = {{key = 'JOY_BTN3'}}, down = iCommandPlaneTrimOn, up = iCommandPlaneTrimOff, name = _('Trimmer'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN19'}}, down = iCommandPlaneTrimOn, up = iCommandPlaneTrimOff, name = _('Trimmer'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneTrimCancel, name = _('Trimmer reset'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN3', reformers = {'LAlt'}}}, down = iCommandHelicopterHover,up = iCommandHelicopterHover_up,  name = _('Hover On/Off'), category = _('Ins Cyclic Stick')},
-{down = iCommandAutopilotEmergOFF,up = iCommandAutopilotEmergOFF_up, name = _('Autopilot Emergency Off'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN3'}}, down = iCommandHelicopterHover,up = iCommandHelicopterHover_up,  name = _('Hover On/Off'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN5'}}, down = iCommandAutopilotEmergOFF,up = iCommandAutopilotEmergOFF_up, name = _('Autopilot Emergency Off'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneWheelBrakeOn, pressed = iCommandPlaneWheelBrakeOn, up = iCommandPlaneWheelBrakeOff, name = _('Wheel brake (press and hold)'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneWheelParkingBrake, name = _('Wheel brake parking'), category = _('Ins Cyclic Stick')},
 {down = iCommandHelicopter_PanelsIlluminationButtonDown, up = iCommandHelicopter_PanelsIlluminationButtonUp, name = _('Cockpit gauges illumination (stick)'), category = _('Ins Cyclic Stick')},
@@ -285,11 +285,11 @@ keyCommands = {
 
 
 -- Ins Collective Stick
-{combos = {{key = 'JOY_BTN4'}}, down = iCommandPlane_LockOn_start, up = iCommandPlane_LockOn_finish, name = _('Lock target'), category = _('Ins Collective Stick')},
-{down = iCommandPlaneZoomIn, name = _('Shkval Narrow View 23x'), category = _('Ins Collective Stick')},
-{down = iCommandPlaneZoomOut, name = _('Shkval Wide View 7x'), category = _('Ins Collective Stick')},
-{down = iCommandPlaneIncreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Increase size'), category = _('Ins Collective Stick')},
-{down = iCommandPlaneDecreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Decrease size'), category = _('Ins Collective Stick')},
+{down = iCommandPlane_LockOn_start, up = iCommandPlane_LockOn_finish, name = _('Lock target'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN7'}}, down = iCommandPlaneZoomIn, name = _('Shkval Narrow View 23x'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN9'}}, down = iCommandPlaneZoomOut, name = _('Shkval Wide View 7x'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN8'}}, down = iCommandPlaneIncreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Increase size'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN10'}}, down = iCommandPlaneDecreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Decrease size'), category = _('Ins Collective Stick')},
 {down = iCommandHelicopter_CollectiveStopper_Up, up = iCommandHelicopter_CollectiveStopper_Down, name = _('Collective brake - Assign altitude lever'), category = _('Ins Collective Stick')},
 --{combos = {{key = 'JOY_BTN5'}}, down = iCommandPlaneChangeWeapon, name = _('Outward - Inward Stations Change Weapon'), category = _('Ins Collective Stick')},
 {down = iCommandPlane_RouteMode, name = _('Engage/Disengage Route Mode'), category = _('Ins Collective Stick')},
@@ -680,8 +680,8 @@ axisCommands = {
 -- joystick axes 
 {combos = defaultDeviceAssignmentFor("roll")	, action = iCommandPlaneRoll  , name = _('Flight Control Cyclic Roll')	},
 {combos = defaultDeviceAssignmentFor("pitch")	, action = iCommandPlanePitch , name = _('Flight Control Cyclic Pitch')},
-{combos = defaultDeviceAssignmentFor("rudder")	, action = iCommandPlaneRudder, name = _('Flight Control Rudder')		},
-{combos = defaultDeviceAssignmentFor("thrust")	, action = iCommandPlaneCollective, name = _('Flight Control Collective')},
+{action = iCommandPlaneRudder, name = _('Flight Control Rudder')		},
+{action = iCommandPlaneCollective, name = _('Flight Control Collective')},
 
 {action = iCommandPlaneThrustCommon, name = _('Throttle')},
 {action = iCommandPlaneThrustLeft, name = _('Left Throttle')},

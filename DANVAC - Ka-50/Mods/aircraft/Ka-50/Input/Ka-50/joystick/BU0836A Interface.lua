@@ -678,15 +678,15 @@ keyCommands = {
 axisCommands = {
 
 -- joystick axes 
-{combos = defaultDeviceAssignmentFor("roll")	, action = iCommandPlaneRoll  , name = _('Flight Control Cyclic Roll')	},
-{combos = defaultDeviceAssignmentFor("pitch")	, action = iCommandPlanePitch , name = _('Flight Control Cyclic Pitch')},
-{combos = defaultDeviceAssignmentFor("rudder")	, action = iCommandPlaneRudder, name = _('Flight Control Rudder')		},
-{combos = defaultDeviceAssignmentFor("thrust")	, action = iCommandPlaneCollective, name = _('Flight Control Collective')},
+{action = iCommandPlaneRoll  , name = _('Flight Control Cyclic Roll')	},
+{action = iCommandPlanePitch , name = _('Flight Control Cyclic Pitch')},
+{combos = {{key = "JOY_Z", filter = {curvature = {0}, deadzone = 0, invert = false, saturationX = 1, saturationY = 1, slider = false}}}, action = iCommandPlaneRudder, name = _('Flight Control Rudder')		},
+{action = iCommandPlaneCollective, name = _('Flight Control Collective')},
 
 {action = iCommandPlaneThrustCommon, name = _('Throttle')},
 {action = iCommandPlaneThrustLeft, name = _('Left Throttle')},
 {action = iCommandPlaneThrustRight, name = _('Right Throttle')},
-{action = iCommandWheelBrake, name = _('Wheel Brake')},
+{combos = {{key = "JOY_X", filter = {curvature = {0}, deadzone = 0, invert = false, saturationX = 1, saturationY = 1, slider = false},},{key = "JOY_Y", filter = {curvature = {0}, deadzone = 0, invert = false, saturationX = 1, saturationY = 1, slider = false},}}, action = iCommandWheelBrake, name = _('Wheel Brake')},
 
 
 {action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
