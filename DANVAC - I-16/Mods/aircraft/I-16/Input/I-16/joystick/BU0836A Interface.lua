@@ -21,11 +21,11 @@ join(res.keyCommands,{
 
 -- Systems
 --{down = iCommandPlaneFlaps,																			name = _('Wing Flaps Handle, Up/Down'),	category = _('Systems')},
-{combos = {{key = 'JOY_BTN8'}}, down = iCommandPlaneFlapsOn,				up = iCommandPlaneFlaps,								name = _('Wing Flaps Handle, Down'),		category = _('Systems')},
-{combos = {{key = 'JOY_BTN7'}}, down = iCommandPlaneFlapsOff,				up = iCommandPlaneFlaps,								name = _('Wing Flaps Handle, Up'),		category = _('Systems')},
+{down = iCommandPlaneFlapsOn,				up = iCommandPlaneFlaps,								name = _('Wing Flaps Handle, Down'),		category = _('Systems')},
+{down = iCommandPlaneFlapsOff,				up = iCommandPlaneFlaps,								name = _('Wing Flaps Handle, Up'),		category = _('Systems')},
 {down = iCommandPlaneHook,																			name = _('Landing Gear Next State'),		category = _('Systems')},
-{combos = {{key = 'JOY_BTN11'}}, down = iCommandPlaneGearUp,				up = iCommandPlaneGear,									name = _('Landing Gear Handle, Up'),			category = _('Systems')},
-{combos = {{key = 'JOY_BTN12'}}, down = iCommandPlaneGearDown,				up = iCommandPlaneGear,									name = _('Landing Gear Handle, Down'),			category = _('Systems')},
+{down = iCommandPlaneGearUp,				up = iCommandPlaneGear,									name = _('Landing Gear Handle, Up'),			category = _('Systems')},
+{down = iCommandPlaneGearDown,				up = iCommandPlaneGear,									name = _('Landing Gear Handle, Down'),			category = _('Systems')},
 {down = iCommandPlaneWheelBrakeOn,			up = iCommandPlaneWheelBrakeOff,						name = _('Wheel Brake On/Off'),			category = _('Systems')},
 {down = iCommandPlaneWheelBrakeLeftOn,		up = iCommandPlaneWheelBrakeLeftOff,					name = _('Wheel Brake Left On/Off'),	category = _('Systems')},
 {down = iCommandPlaneWheelBrakeRightOn,		up = iCommandPlaneWheelBrakeRightOff,					name = _('Wheel Brake Right On/Off'),	category = _('Systems')},
@@ -72,8 +72,6 @@ join(res.keyCommands,{
 
 {down = 3046, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = 1, name = _('Supercharger switch HIGH'), category = _('Engine Control')},
 {down = 3046, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = 0, name = _('Supercharger switch LOW'), category = _('Engine Control')},
-{combos = {{key = 'JOY_BTN27'}}, down = 3046, up = 3046, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = 1, value_up = 0.5, name = _('Supercharger switch HIGH (Warthog)'), category = _('Engine Control')},
-{combos = {{key = 'JOY_BTN28'}}, down = 3046, up = 3046, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = 0, value_up = 0.5, name = _('Supercharger switch LOW (Warthog)'), category = _('Engine Control')},
 
 {down = 3029, up = 3029, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = 1, value_up = 0, name = _('Motor Shutdown'), category = _('Engine Control')},
 
@@ -99,15 +97,9 @@ join(res.keyCommands,{
 
 {down = 3050, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 1, name = _('Gear lock ON'),	category = _('Systems')},
 {down = 3050, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 0, name = _('Gear lock OFF'),	category = _('Systems')},
-{combos = {{key = 'JOY_BTN16'}}, down = 3050, up = 3050, cockpit_device_id = devices.GEAR_SYSTEM, value_down = 1, value_up = 0, name = _('Gear lock (Warthog)'), category = _('Systems')},
-
-{down = 3051, cockpit_device_id  = devices.GEAR_SYSTEM, value_down = 1, name = _('Gear direction UP'),   category = _('Systems')},
-{down = 3051, cockpit_device_id  = devices.GEAR_SYSTEM, value_down = 0, name = _('Gear direction DOWN'), category = _('Systems')},
-{combos = {{key = 'JOY_BTN17'}}, down = 3051, up = 3051, cockpit_device_id = devices.GEAR_SYSTEM, value_down = 1, value_up = 0, name = _('Gear direction (Warthog)'), category = _('Systems')},
 
 {down = 3055, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 1, name = _('Gear brake spring ON'),	category = _('Systems')},
 {down = 3055, cockpit_device_id  = devices.GEAR_SYSTEM,	value_down = 0, name = _('Gear brake spring OFF'),	category = _('Systems')},
-{combos = {{key = 'JOY_BTN20'}}, down = 3055, up = 3055, cockpit_device_id = devices.GEAR_SYSTEM, value_down = 1, value_up = 0, name = _('Gear brake spring (Warthog)'), category = _('Systems')},
 
 {down = 3006, up = 3006, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down =  1, value_up = 0.0, name = _('Motor cooling flaps Increase'), category = _('Engine Control')}, 
 {down = 3006, up = 3006, cockpit_device_id  = devices.MOTOR_SYSTEM, value_down = -1, value_up = 0.0, name = _('Motor cooling flaps Decrease'), category = _('Engine Control')}, 
@@ -151,12 +143,12 @@ join(res.keyCommands,{
 join(res.axisCommands,{
 {action = iCommandPlaneRoll, name = _('Roll')},
 {action = iCommandPlanePitch, name = _('Pitch')},
-{action = iCommandPlaneRudder, name = _('Rudder')},
-{combos = {{key = "JOY_Z"}}, action = iCommandPlaneThrustCommon, name = _('Thrust')},
-{combos = {{key = "JOY_RZ"}}, action = 3001, cockpit_device_id  = devices.MOTOR_SYSTEM, name = _('Engine RPM Setting')},
+{combos = {{key = "JOY_Z"}}, action = iCommandPlaneRudder, name = _('Rudder')},
+{action = iCommandPlaneThrustCommon, name = _('Thrust')},
+{action = 3001, cockpit_device_id  = devices.MOTOR_SYSTEM, name = _('Engine RPM Setting')},
 {action = iCommandWheelBrake,		name = _('Wheel Brake')},
-{action = iCommandLeftWheelBrake,	name = _('Wheel Brake Left')},
-{action = iCommandRightWheelBrake,	name = _('Wheel Brake Right')},
+{combos = {{key = "JOY_X"}}, action = iCommandLeftWheelBrake,	name = _('Wheel Brake Left')},
+{combos = {{key = "JOY_Y"}}, action = iCommandRightWheelBrake,	name = _('Wheel Brake Right')},
 
 -- TrackIR axes
 {action = iCommandViewVerticalAbs		, name = _('Absolute Camera Vertical View')},
