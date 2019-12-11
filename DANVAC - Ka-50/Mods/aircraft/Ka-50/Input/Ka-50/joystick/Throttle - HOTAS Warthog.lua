@@ -331,7 +331,7 @@ keyCommands = {
 {down = iCommandHelicopter_Rotor_Lock, name = _('Rotor brake'), category = _('Ins Engines start-up control panel and levers')},
 
 -- Ins Targeting Mode Controls Panel PVR (Ка-50 - ПВР)
-{down = iCommandPlaneCancelWeaponsDelivery, up = iCommandPlaneCancelWeaponsDelivery_up, name = _('Button Targeting mode reset'), category = _('Ins Targeting Mode Controls Panel PVR')},
+{combos = {{key = 'JOY_BTN8'}}, down = iCommandPlaneCancelWeaponsDelivery, up = iCommandPlaneCancelWeaponsDelivery_up, name = _('Button Targeting mode reset'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlaneModeHelmet, name = _('Helmet-mounted system On/Off'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlaneLaserRangerOnOff, name = _('Laser standby On/Off switch'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlane_AutomaticTracking_Gunsight_switch , name = _('Automatic tracking/gun sight'), category = _('Ins Targeting Mode Controls Panel PVR')},
@@ -672,12 +672,13 @@ keyCommands = {
 {down = 3003	, cockpit_device_id  = 100,value_down = 1.0, name = _('Kneeboard current position mark point')  , category = _('Kneeboard')},
 
 --- Warthog
-{combos = {{key = 'JOY_BTN20'}}, up = iCommandPlaneZoomOut, down = iCommandPlaneZoomIn, name = _('Shkval View 7x/23x (Warthog)'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN7'}}, up = iCommandPlaneZoomOut, down = iCommandPlaneZoomIn, name = _('Shkval View 7x/23x (Warthog)'), category = _('Ins Collective Stick')},
 {combos = {{key = 'JOY_BTN4'}}, down = 3002, value_down = 0.0, cockpit_device_id = 50, name = "SPU-9 VHF-2", category = "Systems"},
 {combos = {{key = 'JOY_BTN5'}}, down = 3002, value_down = 0.11, cockpit_device_id = 50, name = "SPU-9 VHF-1", category = "Systems"},
 {combos = {{key = 'JOY_BTN6'}}, down = 3002, value_down = 0.22, cockpit_device_id = 50, name = "SPU-9 SW", category = "Systems"},
 {down = 3002, value_down = 0.33, cockpit_device_id = 50, name = "SPU-9 Ground Crew", category = "Systems"},
-
+{combos = {{key = "JOY_BTN20"}}, down = 3001, up = 3001, cockpit_device_id = 12, value_down = 1.0, value_up = 0.0, name = "Master arm on (Warthog)", category = "Ins Weapons Status and Control Panel PUI-800"},
+{combos = {{key = "JOY_BTN25"}}, down = 3002, up = 3002, cockpit_device_id = 23, value_down = 1.0, value_up = 0.0, name = "Helmet-mounted sight system on (Warthog)", category = "Ins Targeting Mode Controls Panel PVR"},
 },
 
 
@@ -695,8 +696,8 @@ axisCommands = {
 {action = iCommandWheelBrake, name = _('Wheel Brake')},
 
 
-{combos = {{key = "JOY_X", filter = {curvature = {0}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false},}, }, action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
-{combos = {{key = "JOY_Y", filter = {curvature = {0}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false},}, }, action = iCommandPlaneSelecterVerticalAbs   , name = _('Absolute SHKVAL Vertical Slew')},
+{combos = {{key = "JOY_X", filter = {curvature = {0.15}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false},}, }, action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
+{combos = {{key = "JOY_Y", filter = {curvature = {0.15}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false},}, }, action = iCommandPlaneSelecterVerticalAbs   , name = _('Absolute SHKVAL Vertical Slew')},
 
 --{combos = {{key = 'JOY_X', reformers = {'JOY_BTN6'}}},  action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
 --{combos = {{key = 'JOY_Y', reformers = {'JOY_BTN6'}}}, action = iCommandPlaneSelecterVerticalAbs   , name = _('Absolute SHKVAL Vertical Slew')},

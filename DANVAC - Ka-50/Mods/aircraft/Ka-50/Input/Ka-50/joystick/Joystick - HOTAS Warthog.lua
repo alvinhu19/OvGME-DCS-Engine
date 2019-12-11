@@ -259,7 +259,7 @@ keyCommands = {
 
 
 -- Ins Cyclick Stick
-{combos = {{key = 'JOY_BTN4'}}, pressed = iCommandPlaneDesignate_CageOn, up = iCommandPlaneDesignate_CageOff, name = _('Uncage SHKVAL, designate target'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN9'}}, pressed = iCommandPlaneDesignate_CageOn, up = iCommandPlaneDesignate_CageOff, name = _('Uncage SHKVAL, designate target'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_U'}}, pressed = iCommandPlaneRadarUp, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew up'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_D'}}, pressed = iCommandPlaneRadarDown, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew down'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_L'}}, pressed = iCommandPlaneRadarLeft, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew left'), category = _('Ins Cyclic Stick')},
@@ -278,7 +278,7 @@ keyCommands = {
 {down = iCommandPlaneTrimCancel, name = _('Trimmer reset'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN3'}}, down = iCommandHelicopterHover,up = iCommandHelicopterHover_up,  name = _('Hover On/Off'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN5'}}, down = iCommandAutopilotEmergOFF,up = iCommandAutopilotEmergOFF_up, name = _('Autopilot Emergency Off'), category = _('Ins Cyclic Stick')},
-{down = iCommandPlaneWheelBrakeOn, pressed = iCommandPlaneWheelBrakeOn, up = iCommandPlaneWheelBrakeOff, name = _('Wheel brake (press and hold)'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN4'}}, down = iCommandPlaneWheelBrakeOn, pressed = iCommandPlaneWheelBrakeOn, up = iCommandPlaneWheelBrakeOff, name = _('Wheel brake (press and hold)'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneWheelParkingBrake, name = _('Wheel brake parking'), category = _('Ins Cyclic Stick')},
 {down = iCommandHelicopter_PanelsIlluminationButtonDown, up = iCommandHelicopter_PanelsIlluminationButtonUp, name = _('Cockpit gauges illumination (stick)'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlane_SPU9_PTT_on, up = iCommandPlane_SPU9_PTT_off, name = _('SPU-9 PTT'), category = _('Ins Cyclic Stick')},
@@ -286,10 +286,10 @@ keyCommands = {
 
 -- Ins Collective Stick
 {down = iCommandPlane_LockOn_start, up = iCommandPlane_LockOn_finish, name = _('Lock target'), category = _('Ins Collective Stick')},
-{combos = {{key = 'JOY_BTN7'}}, down = iCommandPlaneZoomIn, name = _('Shkval Narrow View 23x'), category = _('Ins Collective Stick')},
-{combos = {{key = 'JOY_BTN9'}}, down = iCommandPlaneZoomOut, name = _('Shkval Wide View 7x'), category = _('Ins Collective Stick')},
-{combos = {{key = 'JOY_BTN8'}}, down = iCommandPlaneIncreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Increase size'), category = _('Ins Collective Stick')},
-{combos = {{key = 'JOY_BTN10'}}, down = iCommandPlaneDecreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Decrease size'), category = _('Ins Collective Stick')},
+{down = iCommandPlaneZoomIn, name = _('Shkval Narrow View 23x'), category = _('Ins Collective Stick')},
+{down = iCommandPlaneZoomOut, name = _('Shkval Wide View 7x'), category = _('Ins Collective Stick')},
+{down = iCommandPlaneIncreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Increase size'), category = _('Ins Collective Stick')},
+{down = iCommandPlaneDecreaseBase_Distance, up = iCommandPlaneStopBase_Distance, name = _('TV Target frame Decrease size'), category = _('Ins Collective Stick')},
 {down = iCommandHelicopter_CollectiveStopper_Up, up = iCommandHelicopter_CollectiveStopper_Down, name = _('Collective brake - Assign altitude lever'), category = _('Ins Collective Stick')},
 --{combos = {{key = 'JOY_BTN5'}}, down = iCommandPlaneChangeWeapon, name = _('Outward - Inward Stations Change Weapon'), category = _('Ins Collective Stick')},
 {down = iCommandPlane_RouteMode, name = _('Engage/Disengage Route Mode'), category = _('Ins Collective Stick')},
