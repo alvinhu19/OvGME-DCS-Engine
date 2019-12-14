@@ -688,7 +688,7 @@ axisCommands = {
 {action = iCommandPlaneRoll  , name = _('Flight Control Cyclic Roll')	},
 {action = iCommandPlanePitch , name = _('Flight Control Cyclic Pitch')},
 {action = iCommandPlaneRudder, name = _('Flight Control Rudder')		},
-{combos = {{key = "JOY_Z", filter = {curvature = {0}, deadzone = 0, invert = true, saturationX = 1, saturationY = 1, slider = false},}, }, action = iCommandPlaneCollective, name = _('Flight Control Collective')},
+{combos = {{key = "JOY_Z", filter = {curvature = {0}, deadzone = 0, invert = true, saturationX = 1, saturationY = 1, slider = false}}}, action = iCommandPlaneCollective, name = _('Flight Control Collective')},
 
 {action = iCommandPlaneThrustCommon, name = _('Throttle')},
 {action = iCommandPlaneThrustLeft, name = _('Left Throttle')},
@@ -696,8 +696,8 @@ axisCommands = {
 {action = iCommandWheelBrake, name = _('Wheel Brake')},
 
 
-{combos = {{key = "JOY_X", filter = {curvature = {0.15}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false},}, }, action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
-{combos = {{key = "JOY_Y", filter = {curvature = {0.15}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false},}, }, action = iCommandPlaneSelecterVerticalAbs   , name = _('Absolute SHKVAL Vertical Slew')},
+{combos = {{key = "JOY_X", filter = {curvature = {0.15}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false}}}, action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
+{combos = {{key = "JOY_Y", filter = {curvature = {0.15}, deadzone = 0.1, invert = false, saturationX = 1, saturationY = 0.125, slider = false}}}, action = iCommandPlaneSelecterVerticalAbs   , name = _('Absolute SHKVAL Vertical Slew')},
 
 --{combos = {{key = 'JOY_X', reformers = {'JOY_BTN6'}}},  action = iCommandPlaneSelecterHorizontalAbs, name = _('Absolute SHKVAL Horizontal Slew')},
 --{combos = {{key = 'JOY_Y', reformers = {'JOY_BTN6'}}}, action = iCommandPlaneSelecterVerticalAbs   , name = _('Absolute SHKVAL Vertical Slew')},
