@@ -123,8 +123,8 @@ join(res.keyCommands,{
 {pressed = 3040, cockpit_device_id  = devices.COMMON_SYSTEM, value_pressed = 0.002, name = _('Compass course Increase'), category =_('Systems')}, 
 {pressed = 3040, cockpit_device_id  = devices.COMMON_SYSTEM, value_pressed = -0.002, name = _('Compass course Decrease'), category = _('Systems')}, 
 
-{down = 3003, cockpit_device_id  = devices.COMMON_SYSTEM, value_down =  1, name = _('Seat height Increase'), category =_('Systems')}, 
-{down = 3003, cockpit_device_id  = devices.COMMON_SYSTEM, value_down =  -1, name = _('Seat height Decrease'), category = _('Systems')}, 
+{combos = {{key = 'JOY_BTN17'}}, down = 3003, cockpit_device_id  = devices.COMMON_SYSTEM, value_down =  1, name = _('Seat height Increase'), category =_('Systems')}, 
+{combos = {{key = 'JOY_BTN15'}}, down = 3003, cockpit_device_id  = devices.COMMON_SYSTEM, value_down =  -1, name = _('Seat height Decrease'), category = _('Systems')}, 
 
 {down = 3001, up = 3001, cockpit_device_id  = devices.OXYGEN_SYSTEM, value_down = 1, value_up = 0, name = _('Oxygen adjusting valve Increase'), category = _('Systems')},
 {down = 3001, up = 3001, cockpit_device_id  = devices.OXYGEN_SYSTEM, value_down = -1, value_up = 0, name = _('Oxygen adjusting valve Decrease'), category = _('Systems')},
