@@ -267,7 +267,7 @@ keyCommands = {
 {down = iCommandPlaneRadarCenter, name = _('KU-31 Shkval center'), category = _('Ins Cyclic Stick')},
 {combos = defaultDeviceAssignmentFor("fire"), down = iCommandPlaneFire, up = iCommandPlaneFireOff, name = _('Gun fire'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN2'}}, down = iCommandPlanePickleOn,    up = iCommandPlanePickleOff, name = _('Release weapons'), category = _('Ins Cyclic Stick')},
-{down = iCommandPlaneModeCannon, name = _('Gun Select'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN7'}}, down = iCommandPlaneModeCannon, name = _('Gun Select'), category = _('Ins Cyclic Stick')},
 
 {pressed = iCommandPlaneUpStart    , up = iCommandPlaneUpStop  ,   name = _('Cyclic nose down'), category = _('Ins Cyclic Stick')},
 {pressed = iCommandPlaneDownStart  , up = iCommandPlaneDownStop,   name = _('Cyclic nose up'), category = _('Ins Cyclic Stick')},
@@ -594,8 +594,8 @@ keyCommands = {
 {down = iCommandHelicopter_PPR_button_K,up = iCommandHelicopter_PPR_button_K_up, name = _('Autopilot Bank hold'), category = _('Ins Autopilot')},
 {down = iCommandHelicopter_PPR_button_T,up = iCommandHelicopter_PPR_button_T_up, name = _('Autopilot Pitch hold'), category = _('Ins Autopilot')},
 {down = iCommandHelicopter_PPR_button_H,up = iCommandHelicopter_PPR_button_H_up, name = _('Autopilot Heading hold'), category = _('Ins Autopilot')},
-{down = iCommandHelicopter_PPR_button_B,up = iCommandHelicopter_PPR_button_B_up, name = _('Autopilot Altitude hold'), category = _('Ins Autopilot')},
-{down = iCommandHelicopter_PPR_button_DIR,up = iCommandHelicopter_PPR_button_DIR_up, name = _('Autopilot Director control'), category = _('Ins Autopilot')},
+{combos = {{key = 'JOY_BTN10'}}, down = iCommandHelicopter_PPR_button_B,up = iCommandHelicopter_PPR_button_B_up, name = _('Autopilot Altitude hold'), category = _('Ins Autopilot')},
+{combos = {{key = 'JOY_BTN8'}}, down = iCommandHelicopter_PPR_button_DIR,up = iCommandHelicopter_PPR_button_DIR_up, name = _('Autopilot Director control'), category = _('Ins Autopilot')},
 {down = iCommandHelicopter_PPR_BAR_RV , name = _('Autopilot BARO/RALT altitude hold mode'), category = _('Ins Autopilot')},
 {down =iCommand_NAVINTERF_HeadingCourse , name = _('Autopilot Desired heading - Desired track'), category = _('Ins Autopilot')},
 

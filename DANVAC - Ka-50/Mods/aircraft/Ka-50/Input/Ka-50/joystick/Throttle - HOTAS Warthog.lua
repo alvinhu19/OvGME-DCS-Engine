@@ -248,7 +248,7 @@ keyCommands = {
 
 
 -- Ins Countermeasures dispensers (Ка-50 - щиток УВ-26)
-{down = iCommandPlaneCMDDispence,  up = iCommandPlaneCMDDispenceOff, name = _('UV-26 Start dispensing'), category = _('Ins Countermeasures dispensers UV-26')},
+{combos = {{key = 'JOY_BTN26'}}, down = iCommandPlaneCMDDispence,  up = iCommandPlaneCMDDispenceOff, name = _('UV-26 Start dispensing'), category = _('Ins Countermeasures dispensers UV-26')},
 {down = iCommandPlaneCMDDispenceStop,  up = iCommandPlaneCMDDispenceStopOff, name = _('UV-26 Stop dispensing'), category = _('Ins Countermeasures dispensers UV-26')},
 {down = iCommandPlaneCMDChangeRippleQuantity,  up = iCommandPlaneCMDChangeRippleQuantityOff, name = _('UV-26 Number of flare sequences'), category = _('Ins Countermeasures dispensers UV-26')},
 {down = iCommandPlaneCMDChangeRippleInterval,    up = iCommandPlaneCMDChangeRippleIntervalOff, name = _('UV-26 Delay between sequences'), category = _('Ins Countermeasures dispensers UV-26')},
@@ -265,7 +265,7 @@ keyCommands = {
 {pressed = iCommandPlaneRadarLeft, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew left'), category = _('Ins Cyclic Stick')},
 {pressed = iCommandPlaneRadarRight, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew right'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneRadarCenter, name = _('KU-31 Shkval center'), category = _('Ins Cyclic Stick')},
-{combos = defaultDeviceAssignmentFor("fire"), down = iCommandPlaneFire, up = iCommandPlaneFireOff, name = _('Gun fire'), category = _('Ins Cyclic Stick')},
+{down = iCommandPlaneFire, up = iCommandPlaneFireOff, name = _('Gun fire'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlanePickleOn,    up = iCommandPlanePickleOff, name = _('Release weapons'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneModeCannon, name = _('Gun Select'), category = _('Ins Cyclic Stick')},
 
@@ -336,8 +336,8 @@ keyCommands = {
 {down = iCommandPlaneLaserRangerOnOff, name = _('Laser standby On/Off switch'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlane_AutomaticTracking_Gunsight_switch , name = _('Automatic tracking/gun sight'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlane_K041_Power						, name = _('K-041 Targeting system power switch'), category = _('Ins Targeting Mode Controls Panel PVR')},
-{down = iCommandPlane_AutomaticTurn, up = iCommandPlane_AutomaticTurn_up, name = _('Button Automatic turn on target mode'), category = _('Ins Targeting Mode Controls Panel PVR')},
-{down = iCommandPlane_GroundMovingTarget, up =	iCommandPlane_GroundMovingTarget_up, name = _('Button Ground moving target'), category = _('Ins Targeting Mode Controls Panel PVR')},
+{combos = {{key = 'JOY_BTN31'}}, down = iCommandPlane_AutomaticTurn, up = iCommandPlane_AutomaticTurn_up, name = _('Button Automatic turn on target mode'), category = _('Ins Targeting Mode Controls Panel PVR')},
+{combos = {{key = 'JOY_BTN32'}}, down = iCommandPlane_GroundMovingTarget, up =	iCommandPlane_GroundMovingTarget_up, name = _('Button Ground moving target'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlane_AirborneTarget, up = iCommandPlane_AirborneTarget_up, name = _('Button Airborne target'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlane_HeadOnAspect, up = iCommandPlane_HeadOnAspect_up, name = _('Button Head-on airborne target aspect'), category = _('Ins Targeting Mode Controls Panel PVR')},
 {down = iCommandPlane_ChangeDeliveryMode_right, name = _('Weapon system mode selector (to right)'), category = _('Ins Targeting Mode Controls Panel PVR')},
@@ -679,6 +679,12 @@ keyCommands = {
 {down = 3002, value_down = 0.33, cockpit_device_id = 50, name = "SPU-9 Ground Crew", category = "Systems"},
 {combos = {{key = "JOY_BTN20"}}, down = 3001, up = 3001, cockpit_device_id = 12, value_down = 1.0, value_up = 0.0, name = "Master arm on (Warthog)", category = "Ins Weapons Status and Control Panel PUI-800"},
 {combos = {{key = "JOY_BTN25"}}, down = 3002, up = 3002, cockpit_device_id = 23, value_down = 1.0, value_up = 0.0, name = "Helmet-mounted sight system on (Warthog)", category = "Ins Targeting Mode Controls Panel PVR"},
+{combos = {{key = 'JOY_BTN13'}}, down = iCommandPlane_RouteMode, up = iCommandPlane_RouteMode, name = _('Engage/Disengage Route Mode (Warthog)'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN14'}}, down = iCommandPlane_DescentMode, up = iCommandPlane_DescentModeOff, name = _('Engage Descent Mode (Warthog)'), category = _('Ins Collective Stick')},
+{combos = {{key = 'JOY_BTN16'}}, down = 3006, value_down = 0.0, up = 3006, value_up = 1.0, cockpit_device_id = 33, name = _('Autopilot BARO/RADAR (Warthog)'), category = _('Ins Autopilot')},
+{combos = {{key = 'JOY_BTN17'}}, down = 3003, value_down = 0.0, up = 3003, value_up = 1.0, cockpit_device_id = 28, name = _('Autopilot Desired heading/track (Warthog)'), category = _('Ins Autopilot')},
+{combos = {{key = 'JOY_BTN27'}}, down = 3001, value_down = 1.0, up = 3001, value_up = 0.5, cockpit_device_id = 44, name = _('Light landing search On/Off (Warthog)'), category = _('Ins Landing Lights & Voice Warning Panel')},
+{combos = {{key = 'JOY_BTN28'}}, down = 3001, value_down = 0.0, up = 3001, value_up = 0.5, cockpit_device_id = 44, name = _('Light landing search Retraction/Off (Warthog)'), category = _('Ins Landing Lights & Voice Warning Panel')},
 },
 
 
