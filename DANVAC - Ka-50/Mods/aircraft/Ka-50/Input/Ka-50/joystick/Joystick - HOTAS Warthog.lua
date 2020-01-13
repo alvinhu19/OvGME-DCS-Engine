@@ -259,15 +259,15 @@ keyCommands = {
 
 
 -- Ins Cyclick Stick
-{combos = {{key = 'JOY_BTN9'}}, pressed = iCommandPlaneDesignate_CageOn, up = iCommandPlaneDesignate_CageOff, name = _('Uncage SHKVAL, designate target'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN14'}}, pressed = iCommandPlaneDesignate_CageOn, up = iCommandPlaneDesignate_CageOff, name = _('Uncage SHKVAL, designate target'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_U'}}, pressed = iCommandPlaneRadarUp, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew up'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_D'}}, pressed = iCommandPlaneRadarDown, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew down'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_L'}}, pressed = iCommandPlaneRadarLeft, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew left'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN_POV1_R'}}, pressed = iCommandPlaneRadarRight, up = iCommandPlaneRadarStop, name = _('KU-31 Shkval slew right'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneRadarCenter, name = _('KU-31 Shkval center'), category = _('Ins Cyclic Stick')},
-{combos = defaultDeviceAssignmentFor("fire"), down = iCommandPlaneFire, up = iCommandPlaneFireOff, name = _('Gun fire'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN2'}}, down = iCommandPlanePickleOn,    up = iCommandPlanePickleOff, name = _('Release weapons'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN7'}}, down = iCommandPlaneModeCannon, name = _('Gun Select'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN5'}}, down = iCommandPlaneFire, up = iCommandPlaneFireOff, name = _('Gun fire'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN1'}}, down = iCommandPlanePickleOn,    up = iCommandPlanePickleOff, name = _('Release weapons'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN2'}}, down = iCommandPlaneModeCannon, name = _('Gun Select'), category = _('Ins Cyclic Stick')},
 
 {pressed = iCommandPlaneUpStart    , up = iCommandPlaneUpStop  ,   name = _('Cyclic nose down'), category = _('Ins Cyclic Stick')},
 {pressed = iCommandPlaneDownStart  , up = iCommandPlaneDownStop,   name = _('Cyclic nose up'), category = _('Ins Cyclic Stick')},
@@ -277,7 +277,7 @@ keyCommands = {
 {combos = {{key = 'JOY_BTN19'}}, down = iCommandPlaneTrimOn, up = iCommandPlaneTrimOff, name = _('Trimmer'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneTrimCancel, name = _('Trimmer reset'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN3'}}, down = iCommandHelicopterHover,up = iCommandHelicopterHover_up,  name = _('Hover On/Off'), category = _('Ins Cyclic Stick')},
-{combos = {{key = 'JOY_BTN5'}}, down = iCommandAutopilotEmergOFF,up = iCommandAutopilotEmergOFF_up, name = _('Autopilot Emergency Off'), category = _('Ins Cyclic Stick')},
+{combos = {{key = 'JOY_BTN9'}}, down = iCommandAutopilotEmergOFF,up = iCommandAutopilotEmergOFF_up, name = _('Autopilot Emergency Off'), category = _('Ins Cyclic Stick')},
 {combos = {{key = 'JOY_BTN4'}}, down = iCommandPlaneWheelBrakeOn, pressed = iCommandPlaneWheelBrakeOn, up = iCommandPlaneWheelBrakeOff, name = _('Wheel brake (press and hold)'), category = _('Ins Cyclic Stick')},
 {down = iCommandPlaneWheelParkingBrake, name = _('Wheel brake parking'), category = _('Ins Cyclic Stick')},
 {down = iCommandHelicopter_PanelsIlluminationButtonDown, up = iCommandHelicopter_PanelsIlluminationButtonUp, name = _('Cockpit gauges illumination (stick)'), category = _('Ins Cyclic Stick')},
