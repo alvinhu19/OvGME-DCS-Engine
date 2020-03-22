@@ -689,7 +689,7 @@ join(res.axisCommands,{
 ------------------------------------------------
 {action = iCommandPlaneRoll,				name = _('Roll'),	category = {_('Flight Control')}},
 {action = iCommandPlanePitch,			name = _('Pitch'),	category = {_('Flight Control')}},
-{combos = {{key = "JOY_Z"}},	action = iCommandPlaneRudder,			name = _('Rudder'),	category = {_('Flight Control')}},
+{combos = {{key = "JOY_Z", filter = {curvature = {0}, deadzone = 0.01, invert = false, saturationX = 1, saturationY = 1, slider = false}}},	action = iCommandPlaneRudder,			name = _('Rudder'),	category = {_('Flight Control')}},
 {action = iCommandPlaneThrustCommon,		name = _('Thrust'),	category = {_('Flight Control')}},
 
 ------------------------------------------------
