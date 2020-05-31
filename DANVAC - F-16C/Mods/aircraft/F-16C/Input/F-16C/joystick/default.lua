@@ -1008,6 +1008,8 @@ join(res.keyCommands,{
 -- Warthog Throttle
 
 {	down = fuel_commands.AirRefuelSw,				up = fuel_commands.AirRefuelSw,					cockpit_device_id = devices.FUEL_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('AIR REFUEL Switch - OPEN (Warthog)'),										category = {_('Left Console'), _('Fuel Control Panel')}},
+{	down = fuel_commands.TankInertingSw,			up = fuel_commands.TankInertingSw, 				cockpit_device_id = devices.FUEL_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('TANK INERTING Switch - TANK INERTING (Warthog)'),									category = {_('Left Console'), _('Fuel Control Panel')}},
+{	down = sms_commands.LaserSw,					up = sms_commands.LaserSw,						cockpit_device_id = devices.SMS,				value_down =  1.0,	value_up = 0.0,	name = _('LASER ARM Switch - ARM (Warthog)'),													category = {_('Instrument Panel')}},
 
 
 })
