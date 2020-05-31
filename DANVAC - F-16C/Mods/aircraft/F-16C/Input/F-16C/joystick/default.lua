@@ -1005,6 +1005,11 @@ join(res.keyCommands,{
 {	down = hotas_commands.THROTTLE_DOG_FIGHT,		up = hotas_commands.THROTTLE_DOG_FIGHT,			cockpit_device_id = devices.HOTAS,				value_down =  1.0,	value_up = 0.0,	name = _('DOGFIGHT/Missile Override Switch (special) - DOGFIGHT/CENTER'),			category = {_('Special For Joystick'), _('Throttle Grip'), _('HOTAS')}},
 {	down = hotas_commands.THROTTLE_SPEED_BRAKE,		up = hotas_commands.THROTTLE_SPEED_BRAKE,		cockpit_device_id = devices.HOTAS,				value_down =  1.0,	value_up = 0.0,	name = _('SPD BRK Switch (special) - Fwd/RETRACT /OFF'),							category = {_('Special For Joystick'), _('Throttle Grip'), _('HOTAS')}},
 
+-- Warthog Throttle
+
+{	down = fuel_commands.AirRefuelSw,				up = fuel_commands.AirRefuelSw,					cockpit_device_id = devices.FUEL_INTERFACE,		value_down =  1.0,	value_up = 0.0,	name = _('AIR REFUEL Switch - OPEN (Warthog)'),										category = {_('Left Console'), _('Fuel Control Panel')}},
+
+
 })
 
 -- joystick axes 
