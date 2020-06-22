@@ -74,15 +74,15 @@ keyCommands = {
 
 
 -- Views ----------------------------------------------------------------------------------
-{combos = {{key = 'JOY_BTN_POV1_L'}},                                           pressed = iCommandViewLeftSlow, up = iCommandViewStopSlow, name = _('View Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_R'}},                                           pressed = iCommandViewRightSlow, up = iCommandViewStopSlow, name = _('View Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_U'}},                                           pressed = iCommandViewUpSlow, up = iCommandViewStopSlow, name = _('View Up slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_D'}},                                           pressed = iCommandViewDownSlow, up = iCommandViewStopSlow, name = _('View Down slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_UR'}},                                          pressed = iCommandViewUpRightSlow, up = iCommandViewStopSlow, name = _('View Up Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_DR'}},                                          pressed = iCommandViewDownRightSlow, up = iCommandViewStopSlow, name = _('View Down Right slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_DL'}},                                          pressed = iCommandViewDownLeftSlow, up = iCommandViewStopSlow, name = _('View Down Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN_POV1_UL'}},                                          pressed = iCommandViewUpLeftSlow, up = iCommandViewStopSlow, name = _('View Up Left slow'), category = _('View')},
-{combos = {{key = 'JOY_BTN5'}},                                                         pressed = iCommandViewCenter, name = _('View Center'), category = _('View')},
+{pressed = iCommandViewLeftSlow, up = iCommandViewStopSlow, name = _('View Left slow'), category = _('View')},
+{pressed = iCommandViewRightSlow, up = iCommandViewStopSlow, name = _('View Right slow'), category = _('View')},
+{pressed = iCommandViewUpSlow, up = iCommandViewStopSlow, name = _('View Up slow'), category = _('View')},
+{pressed = iCommandViewDownSlow, up = iCommandViewStopSlow, name = _('View Down slow'), category = _('View')},
+{pressed = iCommandViewUpRightSlow, up = iCommandViewStopSlow, name = _('View Up Right slow'), category = _('View')},
+{pressed = iCommandViewDownRightSlow, up = iCommandViewStopSlow, name = _('View Down Right slow'), category = _('View')},
+{pressed = iCommandViewDownLeftSlow, up = iCommandViewStopSlow, name = _('View Down Left slow'), category = _('View')},
+{pressed = iCommandViewUpLeftSlow, up = iCommandViewStopSlow, name = _('View Up Left slow'), category = _('View')},
+{pressed = iCommandViewCenter, name = _('View Center'), category = _('View')},
 
 {                                                                                                                       pressed = iCommandViewForwardSlow, up = iCommandViewForwardSlowStop, name = _('Zoom in slow'), category = _('View')},
 {                                                                                                                       pressed = iCommandViewBackSlow, up = iCommandViewBackSlowStop, name = _('Zoom out slow'), category = _('View')},
@@ -262,7 +262,7 @@ keyCommands = {
 
 -- Joystick(s) ----------------------------------------------------------------------------
 -- Wheel Brakes Lever
-{combos = {{key = 'W'}},                                    pressed = iCommandPlaneWheelBrakeOn, up = iCommandPlaneWheelBrakeOff, name = _('Input.Yak52.wheel_brakes'), category = _('Stick')},
+{combos = {{key = 'JOY_BTN4'}},                             pressed = iCommandPlaneWheelBrakeOn, up = iCommandPlaneWheelBrakeOff, name = _('Input.Yak52.wheel_brakes'), category = _('Stick')},
 {                                                           pressed = device_commands.Button_26, cockpit_device_id = devices.CONTROLS, value_pressed = 1.0,  name = _('Input.Yak52.wheel_brakes_plus'),  category = _('Stick')},
 {                                                           pressed = device_commands.Button_26, cockpit_device_id = devices.CONTROLS, value_pressed = -1.0, name = _('Input.Yak52.wheel_brakes_minus'), category = _('Stick')},
 -- Wheel Brakes Lock
@@ -624,7 +624,7 @@ axisCommands = {
 -- Defaults for joystick axes -------------------------------------------------------------
 {combos = defaultDeviceAssignmentFor("roll"),               action = iCommandPlaneRoll, name = _('Roll')},
 {combos = defaultDeviceAssignmentFor("pitch"),              action = iCommandPlanePitch, name = _('Pitch')},
-{combos = defaultDeviceAssignmentFor("rudder"),             action = iCommandPlaneRudder, name = _('Rudder')},
+{                                                           action = iCommandPlaneRudder, name = _('Rudder')},
 -- ----------------------------------------------------------------------------------------
 
 -- Axis Commands --------------------------------------------------------------------------
